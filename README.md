@@ -17,7 +17,7 @@ Clone this repo at `npm install`
 ### Usage
 Recommended actions after installation:
 
-##### package.json
+##### ./package.json
 * update `name`
 * update `version`
 * update `description`
