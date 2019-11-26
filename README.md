@@ -27,3 +27,6 @@ Recommended actions after installation:
 * update `license`
 * update `bugs: url`
 * update `homepage`
+
+##### ./app.js
+* update `DB_CONNECTION`
