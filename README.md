@@ -1,15 +1,16 @@
-# node-app-template
-Boilterplate template for a node app
+# node-mongo-app-template
+Boilterplate template for a Node & MongoDB app
 
 ### Installation
 Clone this repo at `npm install`
 
-`https://github.com/radihuq/node-app-template.git`
+`https://github.com/radihuq/node-mongo-app-template.git`
 
 ### Dependencies
 * [Express](https://github.com/expressjs/express)
 * [Nodemon](https://github.com/remy/nodemon)
 * [Cors](https://github.com/expressjs/cors)
+* [Mongoose](https://github.com/Automattic/mongoose)
 
 ### Changes
 * Better package.json indentation

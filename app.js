@@ -1,8 +1,15 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
 const cors = require('cors');
 
 const SERVER_PORT = 3000;
+const DB_CONNECTION = `mongodb://<username>:<password>@test-shard-00-00-61oov.mongodb.net:27017,test-shard-00-01-61oov.mongodb.net:27017,test-shard-00-02-61oov.mongodb.net:27017/test?ssl=true&replicaSet=test-shard-0&authSource=admin&retryWrites=true&w=majority`;
+
+//Connect to DB
+mongoose.connect(DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => {
+    console.log(`Connected to Database - State: ${mongoose.connection.readyState}`)
+});
 
 //Middlewares
 app.use(cors());

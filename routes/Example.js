@@ -1,10 +1,17 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
+const ExampleModel = require('../models/ExampleModel');
 
 router.get('/', async (req, res) => {
+    const example = new ExampleModel({
+        title: 'Example',
+        description: 'This is the description'
+    });
 
     try {
-        res.status(200).json({message: `Received GET response`});
+        const savedExample = await example.save();
+        res.status(200).json({message: `Received GET response`, response: savedExample});
     } catch(err) {
         console.log(err);
         res.status(400).json({message: `error`, error: err});
