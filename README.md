@@ -1,5 +1,5 @@
 # node-mongo-app-template
-Boilterplate template for a Node & MongoDB app
+Boilerplate template for a Node & MongoDB app
 
 ### Installation
 Clone this repo at `npm install`
