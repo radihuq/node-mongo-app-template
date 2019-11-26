@@ -1,0 +1,27 @@
+{
+    "name": "node-app-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon start app.js",
+        "test": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/USER/REPO"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/USER/REPO"
+    },
+    "hompeage": "https://github.com/USER/REPO",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.1"
+    }
+}
